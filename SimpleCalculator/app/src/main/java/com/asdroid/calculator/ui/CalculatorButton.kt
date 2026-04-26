@@ -20,7 +20,8 @@ fun CalculatorButton(
 ) {
     Button(
         onClick = onClick,
-        modifier = modifier.padding(4.dp),
+        modifier = modifier 
+            .padding(4.dp),
         shape = RoundedCornerShape(50),
         contentPadding = PaddingValues(16.dp),
         colors = ButtonDefaults.buttonColors(
