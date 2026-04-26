@@ -30,6 +30,7 @@ fun CalculatorScreen(
       else "${state.firstNumber}${state.operation}${state.secondNumber}",
       modifier = Modifier
           .fillMaxWidth()
+          .weight(1f)
           .padding(16.dp),
       fontSize = 48.sp,
       maxLines = 1,
