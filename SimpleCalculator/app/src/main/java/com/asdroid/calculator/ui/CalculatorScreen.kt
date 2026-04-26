@@ -10,6 +10,7 @@ import com.asdroid.calculator.CalculatorAction
 import com.asdroid.calculator.CalculatorState
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.graphics.Color
+import androidx.compose.foundation.background
 
 @Composable 
 fun CalculatorScreen(
@@ -19,7 +20,9 @@ fun CalculatorScreen(
   Column(
     modifier = Modifier
     .fillMaxSize()
-    .padding(8.dp),
+    .padding(8.dp)
+    .background(Color.Black)
+    .navigationBarsPadding(),
     verticalArrangement = Arrangement.Bottom
   ){
     Text(
@@ -31,6 +34,7 @@ fun CalculatorScreen(
       fontSize = 48.sp,
       maxLines = 1,
       textAlign = TextAlign.End
+      color = Color.White
     )
     // Row 1
     Row(
