@@ -10,6 +10,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun CalculatorButton(
@@ -19,7 +20,7 @@ fun CalculatorButton(
   onClick : () -> Unit
 ){
   Button(onClick = onClick,
-         modifier = Modier
+         modifier = modifier
          .padding(8.dp),
          shape = RoundedCornerShape(50),
          contentPadding = PaddingValues(16.dp),
