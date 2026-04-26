@@ -33,7 +33,7 @@ fun CalculatorScreen(
           .padding(16.dp),
       fontSize = 48.sp,
       maxLines = 1,
-      textAlign = TextAlign.End
+      textAlign = TextAlign.End,
       color = Color.White
     )
     // Row 1
