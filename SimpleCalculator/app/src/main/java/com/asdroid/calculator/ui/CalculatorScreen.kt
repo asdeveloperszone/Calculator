@@ -23,7 +23,7 @@ fun CalculatorScreen(
     .padding(8.dp)
     .background(Color.Black)
     .navigationBarsPadding(),
-    verticalArrangement = Arrangement.SpacedBetween
+    verticalArrangement = Arrangement.SpaceBetween
   ){
     Text(
       text = if (state.result.isNotEmpty()) state.result
