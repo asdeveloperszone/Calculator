@@ -106,8 +106,8 @@ fun CalculatorScreen(
       CalculatorButton(symbol = "3", modifier = Modifier.weight(1f)) {
         onAction(CalculatorAction.Number(3))
       }
-      CalculatorButton(symbol = "=", backgroundColor = Color(0xFF4CAF50), modifier = Modifier.weight(1f)) {
-        onAction(CalculatorAction.Calculate)
+      CalculatorButton(symbol = ".", backgroundColor = Color(0xFF2196F3), modifier = Modifier.weight(1f)) {
+        onAction(CalculatorAction.Decimal)
       }
   }
   
@@ -120,8 +120,8 @@ fun CalculatorScreen(
       CalculatorButton(symbol = "0", modifier = Modifier.weight(2f)) {
         onAction(CalculatorAction.Number(0))
       }
-      CalculatorButton(symbol = ".", backgroundColor = Color(0xFF2196F3),  modifier = Modifier.weight(1f)) {
-        onAction(CalculatorAction.Decimal)
+      CalculatorButton(symbol = "=", backgroundColor = Color(0xFF4CAF50),  modifier = Modifier.weight(1f)) {
+        onAction(CalculatorAction.Calculate)
       }
    }
  }
