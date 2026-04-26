@@ -23,7 +23,7 @@ fun CalculatorScreen(
     .padding(8.dp)
     .background(Color.Black)
     .navigationBarsPadding(),
-    verticalArrangement = Arrangement.Bottom
+    verticalArrangement = Arrangement.SpacedBetween
   ){
     Text(
       text = if (state.result.isNotEmpty()) state.result
@@ -31,7 +31,7 @@ fun CalculatorScreen(
       modifier = Modifier
           .fillMaxWidth()
           .weight(1f)
-          .padding(16.dp),
+          .padding(top = 24.dp , start = 16.dp , end = 16.dp , bottom = 8.dp),
       fontSize = 48.sp,
       maxLines = 1,
       textAlign = TextAlign.End,
