@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        window.decorView.setBackgroundColor(android.Graphics.Color.BLACK)
+        window.decorView.setBackgroundColor(android.graphics.Color.BLACK)
         setContent {
             SimpleCalculatorTheme {
                 val viewModel = viewModel<CalculatorViewModel>()
