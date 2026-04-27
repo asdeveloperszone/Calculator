@@ -39,7 +39,7 @@ fun CalculatorScreen(
     Column(
            modifier = Modifier
            .fillMaxWidth()
-           .width(1f)
+           .weight(1f)
            .padding(8.dp),
       verticalArrangement = Arrangement.SpaceEvenly
     ){
