@@ -41,7 +41,7 @@ fun CalculatorScreen(
            .fillMaxWidth()
            .weight(1f)
            .padding(8.dp),
-      verticalArrangement = Arrangement.SpaceEvenly
+      verticalArrangement = Arrangement.spacedBy(8.dp)
     ){
       // Row 1
     Row(
