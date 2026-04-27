@@ -39,7 +39,6 @@ fun CalculatorScreen(
     Column(
            modifier = Modifier
            .fillMaxWidth()
-           .weight(1f)
            .padding(8.dp),
       verticalArrangement = Arrangement.spacedBy(8.dp)
     ){
