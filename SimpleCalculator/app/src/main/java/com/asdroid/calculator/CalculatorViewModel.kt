@@ -61,8 +61,8 @@ class CalculatorViewModel : ViewModel(){
             "÷" -> if (second == 0.0) "Error" else "${first / second}"
             else -> return 
         }
-        val resultText = if (result is double && result == result.toLong().toDouble())
-            result.toLong().toString()
+        val resultText = if (result.toString.endsWith(".0"))
+            result.toString().dropLast(2)
             else 
             result.toString() 
       state = state.copy(result = resultText)
