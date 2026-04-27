@@ -61,7 +61,11 @@ class CalculatorViewModel : ViewModel(){
             "÷" -> if (second == 0.0) "Error" else "${first / second}"
             else -> return 
         }
-        state = state.copy(result = result.toString())
+        val resultText = if (result is double && result == result.toLong().toDouble())
+            result.toLong().toString()
+            else 
+            result.toString() 
+      state = state.copy(result = resultText)
     }
     
     private fun enterDecimal(){
